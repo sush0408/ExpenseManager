@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-sample"
+    "url": "https://github.com/sush0408/ExpenseManager"
   },
   "keywords": [
     "MEAN",
@@ -17,8 +17,8 @@
     "Angular"
   ],
   "author": "Sushil",
-  "license": "MIT",
-  "homepage": "",
+  "license": "NA",
+  "homepage": "https://sheltered-thicket-31446.herokuapp.com",
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
