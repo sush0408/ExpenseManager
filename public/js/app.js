@@ -72,10 +72,12 @@ angular.module("expensesApp", ['ngRoute'])
     })
     .controller("ListController", function(expenses, $scope) {
         $scope.expenses = expenses.data;
-        var len = expenses.data.length;
-        console.log(expenses.data)
+        $scope.total=0;
+        var len = $scope.expenses.length;
+        console.log($scope.expenses)
         for(var i=0;i<len;i++){
-            $scope.total+=parseFloat(expenses.data[i].amount);
+            console.log($scope.expenses[i]);
+            $scope.total+=parseFloat($scope.expenses[i].amount);
         }
     })
     .controller("NewExpenseController", function($scope, $location, Expenses) {
