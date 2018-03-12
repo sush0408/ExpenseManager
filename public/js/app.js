@@ -105,6 +105,7 @@ angular.module("expensesApp", ['ngRoute'])
         }
 
         $scope.saveExpense = function(expense) {
+            expense.updateDate=new Date();
             Expenses.editExpense(expense);
             $scope.editMode = false;
             $scope.expenseFormUrl = "";
