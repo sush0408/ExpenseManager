@@ -9,18 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/heroku/node-js-sample"
   },
   "keywords": [
     "MEAN",
     "Express",
     "Angular"
   ],
-  "author": "Chris Chang",
+  "author": "Sushil",
   "license": "MIT",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "",
   "dependencies": {
     "body-parser": "^1.13.3",

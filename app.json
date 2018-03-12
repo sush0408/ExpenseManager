@@ -1,7 +1,6 @@
 {
   "name": "MEAN Expense Example",
   "description": "A MEAN app that allows users to manage Expenses.",
-  "repository": "",
   "logo": "https://mlab.com/company/brand/resources/mLab-logo-onlight.png",
   "keywords": ["node", "express", "angular", "MEAN", "mongodb", "REST", "API"],
   "addons": ["mongolab"]
