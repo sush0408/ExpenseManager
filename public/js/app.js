@@ -73,6 +73,7 @@ angular.module("expensesApp", ['ngRoute'])
     .controller("ListController", function(expenses, $scope) {
         $scope.expenses = expenses.data;
         var len = expenses.data.length;
+        console.log(expenses.data)
         for(var i=0;i<len;i++){
             $scope.total+=parseFloat(expenses.data[i].amount);
         }
