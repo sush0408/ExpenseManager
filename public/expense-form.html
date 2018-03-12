@@ -1,0 +1,26 @@
+<div class="row" ng-hide="expense._id">
+  <div class="col-md-6">
+      <h2>Create new expense</h2>
+  </div>
+</div>
+<div class="container">
+  <div>
+    <p>
+      <label>Name (required)</label> 
+      <input id="name" class="form-control" type="text" ng-model="expense.name" required> 
+    </p>
+    <p>
+      <label>Description (required)</label> 
+      <input id="name" class="form-control" type="text" ng-model="expense.desc" required> 
+    </p>
+    <p>
+      <label>Amount (required)</label> 
+      <input id="name" class="form-control" type="number" ng-model="expense.amount" required> 
+    </p>
+    
+    <p>
+      <button style="margin-top:20px" class="btn btn-default" ng-click="saveexpense(expense)">Save</button>
+      <button style="margin-top:20px" class="btn btn-default" ng-click="back()">Back</button>
+    </p>
+  </div>
+</div>
