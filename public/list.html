@@ -31,7 +31,7 @@
           <a ng-href="#/expense/{{expense._id}}">{{ expense.name }}</a>
         </td>
         <td>{{ expense.desc}}</td>
-        <td>{{ expense.amount }}</td>
+        <td>Rs {{ expense.amount }}</td>
         <td>{{ expense.createDate | date:"MM/dd/yyyy 'at' h:mma"}}</td>
         <td>{{ expense.updateDate | date:"MM/dd/yyyy 'at' h:mma"}}</td>
       </tr>
