@@ -14,11 +14,26 @@
 </div>
 <div class="container">
   <table class="table table-hover">
+    <thead>
+      <th>
+        Name
+      </th>
+      <th>
+        Description
+      </th>
+      <th>Amount</th>
+      <th>Created </th>
+      <th>Updated </th>
+    </thead>
     <tbody>
       <tr ng-repeat="expense in expenses" style="cursor:pointer">
         <td>
-          <a ng-href="#/expense/{{expense._id}}">{{expense}} {{ expense.name }} {{ expense.amount }}</a>
+          <a ng-href="#/expense/{{expense._id}}">{{ expense.name }}</a>
         </td>
+        <td>{{ expense.desc}}</td>
+        <td>{{ expense.amount }}</td>
+        <td>{{ expense.createDate | date:"MM/dd/yyyy 'at' h:mma"}}</td>
+        <td>{{ expense.updateDate | date:"MM/dd/yyyy 'at' h:mma"}}</td>
       </tr>
     </tbody>
   </table>
