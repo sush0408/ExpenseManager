@@ -57,6 +57,7 @@ app.get("/expenses", function(req, res) {
 app.post("/expenses", function(req, res) {
   var newExpense = req.body;
   newExpense.createDate = new Date();
+  newExpense.updateDate= "";
 
   if (!(req.body.name && req.body.amount)) {
     handleError(res, "Invalid user input", "Must provide a name and amount .", 400);

@@ -1,13 +1,13 @@
 <div class = "row">
   <div class="col-md-6">
     <h2>
-      {{ expense.Name }}
+      {{ expense.name }}
     </h2>
   </div>
   <div class="col-md-3">
   </div>
   <div class="col-md-2">
-    <a href="#/"><button style="margin-top:20px" class="btn btn-default" ng-click="deleteContact(expense._id)">Delete</button></a>
+    <a href="#/"><button style="margin-top:20px" class="btn btn-default" ng-click="deleteExpense(expense._id)">Delete</button></a>
   </div>
   <div class="col-md-1">
   </div>
@@ -24,5 +24,5 @@
   </div>
 </div>
 <!-- Contact form -->
-<!-- <div ng-include="expenseFormUrl"> -->
+<div ng-include="expenseFormUrl">
 </div>
